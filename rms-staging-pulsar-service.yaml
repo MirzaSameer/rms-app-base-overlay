@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rms-staging-app9
+  namespace: rms-demo
+spec:
+  type: ClusterIP
+  selector:
+    app: rms-staging-app9  
+  ports:
+  - protocol: TCP
+    port: 80  
+    targetPort: 3000   
