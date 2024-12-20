@@ -1,0 +1,3 @@
+resources:
+  - rms-staging-pulsar-deployment.yaml
+  - rms-staging-pulsar-service.yaml
