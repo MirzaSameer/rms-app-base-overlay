@@ -1,0 +1,7 @@
+bases:
+  - ../base  # Reference the base directory
+
+namespace: rms-demo-staging  # Override the namespace for all resources in this overlay
+
+patchesStrategicMerge:
+  - values.yaml  # Apply the patch for the image tag update
