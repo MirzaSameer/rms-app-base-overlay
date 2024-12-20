@@ -3,7 +3,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: rms-staging-app9
-  namespace: rms-demo-staging  # New namespace for staging
 spec:
   template:
     spec:
