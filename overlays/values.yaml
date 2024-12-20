@@ -1,0 +1,12 @@
+# overlays/rms-staging/patch.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rms-staging-app9
+  namespace: rms-demo-staging  # New namespace for staging
+spec:
+  template:
+    spec:
+      containers:
+        - name:  rms-pulsar-staging-app4
+          image: 351545483064.dkr.ecr.ap-southeast-1.amazonaws.com/rms-pulsar:v14.3  # Updated image tag
