@@ -1,7 +1,6 @@
-bases:
-  - ../base  # Reference the base directory
-
-namespace: rms-demo-staging  # Override the namespace for all resources in this overlay
-
-patchesStrategicMerge:
-  - values.yaml  # Apply the patch for the image tag update
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../base
+patches:
+  - path: values.yaml
